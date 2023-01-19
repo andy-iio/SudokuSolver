@@ -1,0 +1,36 @@
+<!-- To do:
+make responsive on smaller screens
+data validation for anything not 1-9 entered
+unsolvable message if puzzle is not possible 
+add a hint button that only shows one number-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sudoku-solver">
+        <h1 class="intro">Sudoku Solver</h1>
+        <p class="description">Never get stuck on a sudoku puzzle again! </p>
+        <p class="description">Enter your puzzle in the grid below.</p>
+        <p class="instructions">
+            <br>&#8618 Click <span class="decorator-elem">Hint</span> to reveal one number
+            <br>&#8618 Click <span class="decorator-elem">Solve</span> to see the solution
+            <br>&#8618 Click <span class="decorator-elem">Clear</span> to clear the board.
+        </p>
+        <div id="puzzle" class="puzzle"></div>
+        <div class = buttons>
+            <button type="button" id="hint-button" class="hint-button">Hint</button>
+            <button type="button" id="solve-button" class="solve-button">Solve</button>
+            <button type="button" id="clear-button" class="clear-button">Clear</button>
+        </div>
+    </div>    
+
+    <script type="module" defer src="scripts/app.js"></script>
+</body>
+</html>
